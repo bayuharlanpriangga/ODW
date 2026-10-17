@@ -3445,7 +3445,7 @@ msgstr "Pustaka Terbagi - %s - Penpot"
 
 #: src/app/main/ui/auth/verify_token.cljs:110, src/app/main/ui/auth.cljs:40
 msgid "title.default"
-msgstr "Penpot - Kebebasan Desain untuk Tim"
+msgstr "ODW - Orias Design Web"
 
 #: src/app/main/ui/settings/feedback.cljs:162
 msgid "title.settings.feedback"

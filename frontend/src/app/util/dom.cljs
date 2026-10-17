@@ -69,7 +69,13 @@
 
 (defn set-html-title
   [^string title]
-  (set! (.-title globals/document) title))
+  (let [final-title (if (string? title)
+                      (-> title
+                          (str/replace "Penpot | Full-stack design" "ODW - Orias Design Web")
+                          (str/replace "Penpot - Kebebasan Desain untuk Tim" "ODW - Orias Design Web")
+                          (str/replace "Penpot" "ODW - Orias Design Web"))
+                      "ODW - Orias Design Web")]
+    (set! (.-title globals/document) final-title)))
 
 (defn set-page-style!
   [styles]
